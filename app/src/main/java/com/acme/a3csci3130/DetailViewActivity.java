@@ -48,9 +48,8 @@ public class DetailViewActivity extends Activity {
         Contact person = new Contact(uid, business_number, name, primary_business, address, province);
         appState.firebaseReference.child(uid).setValue(person);
         finish();
-
-        //Intent intent = new Intent(this, MainActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
     }
 
@@ -58,7 +57,7 @@ public class DetailViewActivity extends Activity {
     {
         appState.firebaseReference.child(receivedPersonInfo.uid).removeValue();
         finish();
-        //Intent intent = new Intent(this, MainActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

@@ -31,9 +31,9 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 @RunWith(AndroidJUnit4.class)
 public class CRUD_Test {
 
-    String business_number = "123456789";
-    String name = "abc";
-    String primary_business = "Fisher";
+    private String business_number = "123456789";
+    private String name = "abc";
+    private String primary_business = "Fisher";
     String address = "123 bubu St";
     String province = "NS";
 
